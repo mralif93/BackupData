@@ -11,7 +11,7 @@ class BackupData : BackupAgentHelper() {
 
     override fun onCreate() {
         super.onCreate()
-        var helper = SharedPreferencesBackupHelper(this, PREFS_TEST)
+        val helper = SharedPreferencesBackupHelper(this, PREFS_TEST)
         addHelper(MY_PREFS_BACKUP_KEY, helper)
     }
 }
